@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Explore o Codificador de Textos, onde você pode codificar e decodificar seus textos de maneira divertida e fácil!" />
+  <title>Codificador de Textos</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/botoes.css">
+  <link rel="stylesheet" href="./css/entradaTexto.css">
+  <link rel="stylesheet" href="./css/saidaTexto.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  
+
+  <main class="main">
+    <section class="principal">
+      <!-- Usuário digita a sua mensagem -->
+      <textarea class="texto-entrada" name="input-texto" id="input-texto" maxlength="120"
+        placeholder="Digite aqui sua mensagem" spellcheck="false"></textarea>
+
+      <div class="informacao">
+        <img class="exclamacao" src="assets/exclamacao.png" alt="Ponto de exclamação" />
+        <label for="input-texto">Apenas letras minúsculas e sem acento</label>
+      </div>
+
+      <!-- Botões -->
+      <div class="button">
+        <input class="botoes" type="button" value="Criptografar" id="botaoCriptografar" />
+        <input class="botoes" type="button" value="Descriptografar" id="botaoDesincriptografar" />
+      </div>
+    </section>
+
+    <section class="resultado-tela">
+      <textarea class="resultado-msg" name="resultado" id="resultado" placeholder="Nenhuma mensagem encontrada"
+        spellcheck="false"></textarea>
+      <input class="botoes" type="button" value="Copiar" id="botaoCopia" />
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>Desenvolvido por Érika Silva</p>
+      <a href="https://github.com/erikasisan" target="_blank" rel="noopener noreferrer">
+        <img src="assets/logo-git_menor.png" alt="Ícone do GitHub" />
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

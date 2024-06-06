@@ -1,0 +1,92 @@
+:root {
+    --gap-small: 1rem;
+    --gap-large: 2rem;
+    --btn-radius: 20px;
+    --btn-height-small: 40px;
+    --btn-width-small: 150px;
+    --btn-height-medium: 50px;
+    --btn-width-medium: 180px;
+    --btn-height-large: 60px;
+    --btn-width-large: 300px;
+    --btn-height-xlarge: 67px;
+    --btn-width-xlarge: 328px;
+    --font-size-small: 0.8rem;
+    --font-size-medium: 1.2rem;
+    --font-size-large: 1.5rem;
+    --font-size-xlarge: 2rem;
+    --transition-duration: 1s;
+  }
+  
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-small);
+  }
+  
+  .botoes {
+    border-radius: var(--btn-radius);
+    font-size: var(--font-size-small);
+    height: var(--btn-height-small);
+    width: var(--btn-width-small);
+    transition: font-size var(--transition-duration);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  /* Hover effect for .botoes */
+  .botoes:hover {
+    font-size: calc(var(--font-size-small) + 0.2rem);
+  }
+  
+  /* Specific button colors */
+  #botaoCriptografar {
+    background-color: var(--verde);
+    color: var(--branco);
+  }
+  
+  #botaoDesincriptografar {
+    background-color: var(--azulClaro);
+    color: var(--cinza);
+  }
+  
+  /* Media queries for responsive design */
+  @media (min-width: 425px) {
+    .botoes {
+      font-size: var(--font-size-medium);
+      height: var(--btn-height-medium);
+      width: var(--btn-width-medium);
+    }
+    .botoes:hover {
+      font-size: calc(var(--font-size-medium) + 0.1rem);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .botoes {
+      font-size: var(--font-size-large);
+      height: var(--btn-height-large);
+      width: var(--btn-width-large);
+    }
+    .botoes:hover {
+      font-size: calc(var(--font-size-large) + 0.5rem);
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .button {
+      flex-direction: row;
+      gap: var(--gap-large);
+    }
+    .botoes {
+      font-size: var(--font-size-xlarge);
+      height: var(--btn-height-xlarge);
+      width: var(--btn-width-xlarge);
+    }
+    .botoes:hover {
+      font-size: calc(var(--font-size-xlarge) + 0.2rem);
+    }
+  }
+  
+  
