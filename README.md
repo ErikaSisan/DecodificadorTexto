@@ -1,7 +1,7 @@
 # Decifrador de Textos
 
  ## Introdução
-Este projeto é fruto do primeiro desafio da turma dois do programa One Next Education, Alura em parceria com a Oracle. O Decifrador de Textos é uma aplicação que permite aos usuários codificar e decodificar mensagens. Ele oferece a funcionalidade de copiar o texto codificado para facilitar a decodificação rápida e prática. A lógica por trás do decifrador utiliza o método `replace` do JavaScript para substituir caracteres. Para garantir que apenas letras minúsculas sejam aceitas, a entrada do usuário é validada usando o método `Keypress`. As diretrizes de design foram fornecidas pela equipe da Alura via Figma, e os sprints foram gerenciados no Trello.
+Este projeto é fruto do primeiro desafio da turma dois do programa One Next Education, Alura em parceria com a Oracle. O Decifrador de Textos é uma aplicação que permite aos usuários codificar e decodificar mensagens. Ele oferece a funcionalidade de copiar o texto codificado para facilitar a decodificação rápida e prática. A lógica por trás do decifrador utiliza o método `replace` do JavaScript para substituir caracteres. Para garantir que apenas letras minúsculas sejam aceitas, a entrada do usuário é validada usando o método `Keypress`.
 
 ## Detalhes do Projeto
 - **Nome:** Decifrador de Textos
